@@ -1,0 +1,284 @@
+/* Importing the "Manrope" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Applying the "Manrope" font to all elements and ensuring it's used everywhere */
+* {
+    font-family: "Manrope", sans-serif !important;
+}
+
+/* General styling for the body: setting up the layout, minimum height, background color, margin, and padding */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content area, making sure it expands to fill available space */
+.Maindiv {
+    flex: 1;
+}
+
+/* Styling for the navigation bar: height, spacing, alignment, padding, background color, and text color */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+/* Flexbox layout for the navigation links with spacing between them */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for the navigation links: text color, no underlines, and padding */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Hover effect for navigation links: change background color and add border-radius */
+.nav-links a:hover {
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+}
+
+/* Flexbox layout for the logo and title */
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the logo title text: color and margin spacing */
+.logo-title h1 {
+    color: rgb(229, 9, 20);
+    margin-left: 5px;
+}
+
+/* Styling for the logo image: size, border, and rounded corners */
+.logoIimg {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(229, 9, 20);
+    border-radius: 50px;
+}
+
+/* Additional logo styling: margin adjustment and auto height */
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Layout and styling for the main content section: flexbox for spacing, margin, background, shadow */
+.md1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 70px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the left content section: margin, border-radius, height, width, and text color */
+.m1 {
+    border-radius: 20px;
+    margin: 20px;
+    height: 450px;
+    width: 40%;
+    color: black;
+}
+
+/* Styling for the heading inside the left content section */
+.m1 h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #d32f2f;
+}
+
+/* Paragraph styling for the left content section: padding, font size, and line spacing */
+.m1 p {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling for the right image section: margin, height, width, and border-radius */
+.m2 {
+    margin: 20px;
+    height: 450px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+/* Styling for the task container section: margin, background color, text color, padding, shadow */
+.task-container {
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 120px;
+    text-align: center;
+    background: #212121;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 80%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the task container heading */
+.task-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #ccccff;
+}
+
+/* Flexbox layout for task cards with equal spacing */
+.task-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styling for individual task cards: background color, padding, border-radius, width, text alignment, transition */
+.task {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for task cards: scaling the card */
+.task:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for task card headings */
+.task h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Styling for buttons: padding, font size, color, background, border, border-radius, shadow, and transition */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #7d6b66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for buttons: changing background color */
+button:hover {
+    background-color: rgb(229, 9, 20);
+}
+
+/* Styling for task card images */
+.img1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for footer text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Layout for team details in the footer: flexbox for even spacing */
+footer .div2 {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for list items in the footer: color, removing bullet points, and margin for spacing */
+footer li {
+    color: azure;
+    list-style: none;
+    margin-top: 5px;
+}
+
+/* About section styles */
+
+/* Layout for the main content of the about section: flexbox for spacing */
+.ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 97%;
+    height: 600px;
+}
+
+/* Styling for the individual about section cards: background color, margin, size, border-radius, and shadow */
+.a1, .a2, .a3 {
+    background-color: white;
+    margin: 10px;
+    height: 600px;
+    width: 40%;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading 1 styling in about section */
+.ad1 h1 {
+    padding-left: 5px;
+    font-size: large;
+    color: rgb(229, 9, 20);
+}
+
+/* Heading 2 styling in about section */
+.ad1 h2 {
+    padding-left: 5px;
+    font-size: medium;
+    color: rgb(229, 9, 20);
+}
+
+/* Styling for unordered list items in about section */
+.ad1 ul {
+    padding-left: 5px;
+    font-size: small;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Styling for paragraph text in about section */
+.ad1 p {
+    color: rgb(229, 9, 20);
+    padding-left: 5px;
+    font-size: small;
+}
