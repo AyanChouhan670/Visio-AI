@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Sets the viewport to ensure the page is responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links to the favicon image used for the browser tab -->
+    <link rel="icon" href="/static/images/logo.png">
+    
+    <!-- Links to the external CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Title displayed in the browser tab -->
+    <title>VisioAI - Home</title>
+</head>
+
+<body>
+    <!-- Navigation bar containing the logo and navigation links -->
+    <nav class="navbar">
+        <div class="logo-title">
+            <!-- Displays the logo image -->
+            <img class="logoIimg" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            
+            <!-- Website title with bold text for VisioAI -->
+            <h1><b>VisioAI</b>: Face, Gesture and Emotion Tracker</h1>
+        </div>
+
+        <!-- Navigation links for Home, Why, and Contact pages -->
+        <div class="nav-links">
+            <a href="/" aria-label="Home">Home</a>
+            <a href="/about" aria-label="About Us">Why?</a>
+            <a href="/contact" aria-label="Contact Us">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main content section with introduction and task cards -->
+    <div class="Maindiv">
+        <div class="md1">
+            <div class="m1">
+                <!-- Welcome section with a brief description of VisioAI -->
+                <h2>Welcome to VisioAI</h2>
+                <p>
+                    VisioAI is a state-of-the-art tool designed for advanced <b>Face, Gesture, and Emotion Tracking</b>.
+                    Using cutting-edge AI technologies, VisioAI enables real-time detection and analysis to enhance
+                    human-computer interaction, creating a more immersive and responsive experience.
+                </p>
+                <p>
+                    Whether you're in research, development, or user experience design, VisioAI offers powerful
+                    insights to understand and predict human behavior with precision.
+                </p>
+            </div>
+
+            <!-- Image section for VisioAI -->
+            <div class="m2">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="VisioAI" height="350px" width="90%">
+            </div>
+        </div>
+
+        <!-- Task selection section -->
+        <div class="task-container">
+            <h1>Please Select A Task...</h1>
+
+            <!-- Individual task cards with images and buttons -->
+            <div class="task-card">
+                <!-- Face Detection task card -->
+                <div class="task">
+                    <img class="img1" src="{{ url_for('static', filename='images/facedetection.png') }}" alt="Face Detection">
+                    <h3>Face Detection</h3>
+                    <a href="/face_detection"><button>Click Here</button></a>
+                </div>
+
+                <!-- Air Canvas task card -->
+                <div class="task">
+                    <img class="img1" src="{{ url_for('static', filename='images/airlogo.png') }}" alt="Air Canvas">
+                    <h3>Air Canvas</h3>
+                    <a href="/air_canvas"><button>Click Here</button></a>
+                </div>
+
+                <!-- Emotion Recognition task card -->
+                <div class="task">
+                    <img class="img1" src="{{ url_for('static', filename='images/emotionrecognition.png') }}" alt="Emotion Recognition">
+                    <h3>Emotion Recognition</h3>
+                    <a href="/emotion_recognition"><button>Click Here</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section with team credits and personal details -->
+    <footer>
+        <p><strong>&copy; 2024 VisioAI: Face, Gesture and Emotion Tracker</strong> | Developed by Ayan Chouhan & Team.</p>
+
+        <!-- Team member details displayed in columns -->
+        <div class="div2">
+            <!-- Muskan Sharma's details -->
+            <div class="mdata">
+                <li>Muskan Sharma</li>
+                <li>BTech [CSE-AI]</li>
+                <li>21ESBCA007</li>
+            </div>
+
+            <!-- Rashmi Chaudhary's details -->
+            <div class="rdata">
+                <li>Rashmi Chaudhary</li>
+                <li>BTech [CSE-AI]</li>
+                <li>21ESBCA011</li>
+            </div>
+
+            <!-- Ayan Chouhan's details -->
+            <div class="adata">
+                <li>Ayan Chouhan</li>
+                <li>BTech [CSE]</li>
+                <li>21ESBCS009</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
